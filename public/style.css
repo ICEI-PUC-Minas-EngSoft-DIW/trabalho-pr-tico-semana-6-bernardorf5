@@ -1,0 +1,307 @@
+/* Definições gerais da página*/
+
+*{ /* Remove qualquer enchimento e margem padrão do navegador  */
+    margin: 0;
+    padding: 0;
+}
+body { 
+    background-color: #F8F9FA;
+}
+
+/* CSS Header */
+#logo{
+    padding-right: 35px;
+    margin-left: 55px;
+}
+#lupa-barra-navegacao{
+    margin-left: 60px;
+    padding-left: 20px;
+}
+input{
+    border-radius: 10px;
+    margin-left: 0px;
+    width: 300px;
+    height: 30px;
+    background-color: #F8F9FA;
+    transition: 0.3s ease;
+}
+input:focus{
+    width: 400px;
+    transition: 0.3s;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 100; /* Faz com que fique por cima de qualquer outro elemento */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    background-color: #E9ECEF;
+}
+header ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+header li a{
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block; 
+    width: 100%; 
+    padding: 15px;
+    text-align: center;
+    background-color: #F8F9FA;
+    text-decoration: none;
+    color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.3s;
+}
+header li a:hover{
+    width: 120px;
+    border-left: #F99E1C solid;
+    border-right: #F99E1C solid;
+    transition: 0.3s;
+    color: #F99E1C;
+}
+#cabecalho{
+    height: 110px
+}
+
+/* CSS Barra nav lateral */
+
+aside{
+    width:180px;
+    height: 1000px
+}
+aside nav ul{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px;
+    margin-left: 45px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav li{
+    width: 150px;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+aside nav li a{
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block; 
+    width: 100%; 
+    padding: 15px;
+    text-align: center;
+    background-color: #E9ECEF;
+    text-decoration: none;
+    color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.3s;
+}
+aside nav a:hover{
+    border-radius: 10px;
+    border-left: #F99E1C solid;
+    border-right: #F99E1C solid;
+    width: 170px;
+    color: #F99E1C
+}
+
+/* CSS Main */
+
+#conteudo-site{
+    display: flex;
+    width: 100%;
+}
+main{
+    flex: 1;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+main h1{
+    padding: 25px;
+    width: 15vw;
+    text-align: center;
+    background-color: #E9ECEF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+article{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 80vw;
+}
+article a{
+    margin: 10px;
+    display: block;
+    overflow: hidden;
+}
+article img{
+    text-decoration: none;
+    width: 250px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+article img:hover{
+    transform: scale(1.1);
+}
+
+/* CSS Footer */
+
+footer h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+footer h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+}
+footer{
+    font-size: small;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #E9ECEF;
+    height: 120px;
+    text-align: center;
+}
+footer li{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer a{
+    text-decoration: none;
+    color: #212529;
+}
+footer a:hover{
+    color: #F99E1C;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+    header {
+        position: relative;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #logo {
+        margin-left: 0;
+        padding-right: 0;
+        width: 100px;
+    }
+
+    #lupa-barra-navegacao {
+        display: none;
+    }
+
+    input {
+        width: 100% !important;
+    }
+
+    form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header ul li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #cabecalho {
+        height: auto;
+    }
+    /* Main */
+    #conteudo-site{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main h1{
+        width: auto;
+        font-size: 18px;
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+    aside{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;         
+    }
+    #conteudo-site aside nav ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        padding: 0; 
+        margin: 0; 
+        list-style: none;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 100%;
+        margin-top: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    article a{
+        width: calc(50% - 10px);
+        margin: 0;
+    }
+
+    article a img{
+        width: 100%;
+        height: auto;
+    }
+    /* Footer */
+    footer{
+        height: auto;
+        padding: 20px 16px;
+    }
+    footer li{
+        list-style: none;
+    }
+}
