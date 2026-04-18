@@ -1,9 +1,4 @@
 /* Definições gerais da página*/
-
-*{ /* Remove qualquer enchimento e margem padrão do navegador  */
-    margin: 0;
-    padding: 0;
-}
 body { 
     background-color: #F8F9FA;
 }
@@ -11,13 +6,15 @@ body {
 /* CSS Header */
 #logo{
     padding-right: 35px;
-    margin-left: 55px;
+    margin-left: 35px;
+    width: 150px;
 }
 #lupa-barra-navegacao{
     margin-left: 60px;
     padding-left: 20px;
+    width: 65px;
 }
-input{
+input{ 
     border-radius: 10px;
     margin-left: 0px;
     width: 300px;
@@ -26,22 +23,18 @@ input{
     transition: 0.3s ease;
 }
 input:focus{
-    width: 400px;
+    width: 330px;
     transition: 0.3s;
 }
 header{
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     z-index: 100; /* Faz com que fique por cima de qualquer outro elemento */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
     background-color: #E9ECEF;
 }
 header ul{
+    width: 110px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -50,7 +43,7 @@ header li a{
     border-radius: 10px;
     box-sizing: border-box;
     display: block; 
-    width: 100%; 
+    width: 100%;
     padding: 15px;
     text-align: center;
     background-color: #F8F9FA;
@@ -62,39 +55,34 @@ header li a{
     transition: 0.3s;
 }
 header li a:hover{
-    width: 120px;
+    width: 130px;
     border-left: #F99E1C solid;
     border-right: #F99E1C solid;
     transition: 0.3s;
     color: #F99E1C;
 }
 #cabecalho{
-    height: 110px
+    padding: 0;
 }
 
 /* CSS Barra nav lateral */
 
 aside{
-    width:180px;
-    height: 1000px
+    width: 380px;
+    height: auto;
 }
 aside nav ul{
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:100px;
-    margin-left: 45px;
+    padding-top: 140px;
 }
 nav ul{
-    padding: 0;
+    padding: 20px;
     margin: 0;
     list-style: none;
 }
 nav li{
-    width: 150px;
+    width: auto;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     background-color: transparent;
 }
 aside nav li a{
@@ -102,7 +90,7 @@ aside nav li a{
     box-sizing: border-box;
     display: block; 
     width: 100%; 
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     background-color: #E9ECEF;
     text-decoration: none;
@@ -116,27 +104,15 @@ aside nav a:hover{
     border-radius: 10px;
     border-left: #F99E1C solid;
     border-right: #F99E1C solid;
-    width: 170px;
+    width: 270px;
     color: #F99E1C
 }
 
 /* CSS Main */
 
-#conteudo-site{
-    display: flex;
-    width: 100%;
-}
-main{
-    flex: 1;
-    display: flex;
-    margin-top: 50px;
-    flex-direction: column;
-    align-items: center;
-    width: 100%
-}
 main h1{
     padding: 25px;
-    width: 15vw;
+    font-size: 30px;
     text-align: center;
     background-color: #E9ECEF;
     font-family:Arial, Helvetica, sans-serif;
@@ -144,22 +120,18 @@ main h1{
     font-style: italic;
 }
 article{
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
     max-width: 80vw;
 }
 article a{
     margin: 10px;
-    display: block;
     overflow: hidden;
 }
 article img{
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
     text-decoration: none;
-    width: 250px;
-    height: 100%;
     transition: transform 0.3s ease;
 }
 article img:hover{
@@ -180,14 +152,19 @@ footer h2{
     font-weight: lighter;
     font-style: italic;
 }
-footer{
+#footer {
     font-size: small;
     bottom: 0;
     left: 0;
     padding: 10px;
     background-color: #E9ECEF;
-    height: 120px;
+    height: auto;
     text-align: center;
+}
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 footer li{
     width: 100%;
@@ -202,106 +179,4 @@ footer a{
 footer a:hover{
     color: #F99E1C;
     transition: 0.3s;
-}
-
-@media screen and (max-width: 600px) {
-
-    /* HEADER */
-    header {
-        position: relative;
-        flex-direction: column;
-        padding: 20px;
-        gap: 10px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    #logo {
-        margin-left: 0;
-        padding-right: 0;
-        width: 100px;
-    }
-
-    #lupa-barra-navegacao {
-        display: none;
-    }
-
-    input {
-        width: 100% !important;
-    }
-
-    form {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    header ul li a {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    #cabecalho {
-        height: auto;
-    }
-    /* Main */
-    #conteudo-site{
-        display: flex;
-        flex-direction: column;
-    }
-
-    main{
-        margin-top: 20px;
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    main h1{
-        width: auto;
-        font-size: 18px;
-        padding: 20px;
-        margin-bottom: 16px;
-    }
-    aside{
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;         
-    }
-    #conteudo-site aside nav ul{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        justify-content: center;
-        padding: 0; 
-        margin: 0; 
-        list-style: none;
-    }
-
-    article{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        max-width: 100%;
-        margin-top: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    article a{
-        width: calc(50% - 10px);
-        margin: 0;
-    }
-
-    article a img{
-        width: 100%;
-        height: auto;
-    }
-    /* Footer */
-    footer{
-        height: auto;
-        padding: 20px 16px;
-    }
-    footer li{
-        list-style: none;
-    }
 }
