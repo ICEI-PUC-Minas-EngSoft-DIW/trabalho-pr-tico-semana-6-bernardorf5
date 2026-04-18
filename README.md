@@ -8,18 +8,18 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Bernardo Ramos Ferreira
+- Matricula: 907013
+- Proposta de projeto escolhida: 5. Temas e Conteúdos Associados
+- Breve descrição sobre seu projeto: Site com o intuito de ensinar jogadores do jogo online FPS Counter Strike 2 a usarem suas granadas por meio de vídeos rápidos demonstrando esses usos. 
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![BootstrapMobile](public/img/bootstrap-desktop.png)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![BootstrapMobile](public/img/bootstrap-mobile.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
